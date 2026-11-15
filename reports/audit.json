@@ -1,0 +1,124 @@
+{
+  "n_rows": 13979592,
+  "srm": {
+    "n_treated": 11882655,
+    "n_control": 2096937,
+    "observed_share": 0.8500001287591226,
+    "expected_share": 0.85,
+    "chi2": 1.817775848947767e-06,
+    "p_value": 0.9989242531217909
+  },
+  "integrity": {
+    "n_rows": 13979592,
+    "conversion_without_visit": 0,
+    "exposed_controls": 0,
+    "non_binary_labels": 0
+  },
+  "itt_effects": [
+    {
+      "metric": "visit",
+      "treated": 0.048543360048743316,
+      "control": 0.03820095691954503,
+      "ate": 0.010342403129198284,
+      "ate_ci_low": 0.010055622944060531,
+      "ate_ci_high": 0.010629183314336037,
+      "relative_lift": 0.27073675539019615
+    },
+    {
+      "metric": "conversion",
+      "treated": 0.0030894610674129645,
+      "control": 0.0019375880152813366,
+      "ate": 0.0011518730521316279,
+      "ate_ci_low": 0.0010845045523244809,
+      "ate_ci_high": 0.0012192415519387749,
+      "relative_lift": 0.594488117725262
+    }
+  ],
+  "exposure_rate_treated": 0.036036727482199896,
+  "balance": [
+    {
+      "feature": "f0",
+      "smd": -0.006865619336916366,
+      "distinct_values": 2181959
+    },
+    {
+      "feature": "f1",
+      "smd": 0.023994403995126555,
+      "distinct_values": 60
+    },
+    {
+      "feature": "f2",
+      "smd": -0.006240995429165771,
+      "distinct_values": 808663
+    },
+    {
+      "feature": "f3",
+      "smd": -0.04883634670716729,
+      "distinct_values": 552
+    },
+    {
+      "feature": "f4",
+      "smd": 0.007965662972971865,
+      "distinct_values": 260
+    },
+    {
+      "feature": "f5",
+      "smd": -0.03055683464569301,
+      "distinct_values": 132
+    },
+    {
+      "feature": "f6",
+      "smd": -0.04044807442008174,
+      "distinct_values": 1645
+    },
+    {
+      "feature": "f7",
+      "smd": 0.021269532872970523,
+      "distinct_values": 622143
+    },
+    {
+      "feature": "f8",
+      "smd": -0.022433339105332493,
+      "distinct_values": 3743
+    },
+    {
+      "feature": "f9",
+      "smd": 0.024001061014771223,
+      "distinct_values": 1594
+    },
+    {
+      "feature": "f10",
+      "smd": 0.010563464709316317,
+      "distinct_values": 483634
+    },
+    {
+      "feature": "f11",
+      "smd": -0.005159528694117802,
+      "distinct_values": 136
+    }
+  ],
+  "max_abs_smd": 0.04883634670716729,
+  "exposure_funnel": [
+    {
+      "treatment": 0,
+      "exposure": 0,
+      "n": 2096937,
+      "visit_rate": 0.03820095691954503,
+      "conversion_rate": 0.0019375880152813366
+    },
+    {
+      "treatment": 1,
+      "exposure": 0,
+      "n": 11454443,
+      "visit_rate": 0.034861057844541195,
+      "conversion_rate": 0.0011942963966034839
+    },
+    {
+      "treatment": 1,
+      "exposure": 1,
+      "n": 428212,
+      "visit_rate": 0.4145376589166114,
+      "conversion_rate": 0.053784106937685074
+    }
+  ]
+}

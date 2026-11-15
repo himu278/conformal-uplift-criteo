@@ -1,0 +1,116 @@
+{
+  "n_rows": 13979592,
+  "n_train": 3000000,
+  "n_calibration": 2795918,
+  "n_test": 4193878,
+  "alpha": 0.1,
+  "model": "hgb",
+  "outcomes": {
+    "visit": {
+      "ate_test": {
+        "diff": 0.010458594990954945,
+        "se": 0.00026636471343560264,
+        "ci_low": 0.009936529745868831,
+        "ci_high": 0.010980660236041058,
+        "n_treated": 3563992,
+        "n_control": 629886
+      },
+      "conformal": {
+        "q_treated": 0.4409235231109354,
+        "q_control": 0.36739853630508845,
+        "factual_coverage_treated": 0.9501084738686282,
+        "factual_coverage_control": 0.9508958763966813,
+        "target_per_arm": 0.95,
+        "target_ite": 0.9,
+        "share_empty": 0.0318545270034083,
+        "share_excludes_zero": 0.0005951532209568328,
+        "share_certified_benefit": 0.0005951532209568328,
+        "share_excludes_harm": 0.9681454729965917,
+        "share_only_zero": 0.9675503197756349,
+        "share_full_set": 0.0,
+        "set_shares": {
+          "{}": 0.0318545270034083,
+          "{0}": 0.9675503197756349,
+          "{-1,0}": 0.0,
+          "{0,1}": 0.0,
+          "{-1,0,1}": 0.0,
+          "{-1}": 0.0,
+          "{1}": 0.0005951532209568328,
+          "{-1,1}": 0.0
+        }
+      },
+      "exposure": {
+        "outcome": "visit",
+        "itt": 0.010458594990954945,
+        "itt_ci": [
+          0.009936529745868831,
+          0.010980660236041058
+        ],
+        "naive_exposed_vs_control": 0.37822046906173534,
+        "share_exposed_in_treated": 0.03588953061623034,
+        "complier_effect_wald": 0.29141074879996476,
+        "complier_effect_ci": [
+          0.27686429928886364,
+          0.30595719831106594
+        ]
+      },
+      "score_summary": {
+        "mean_predicted_uplift": 0.007717799808147224,
+        "share_predicted_negative": 0.2128283178480633
+      }
+    },
+    "conversion": {
+      "ate_test": {
+        "diff": 0.0010094194545277099,
+        "se": 6.37998527589489e-05,
+        "ci_low": 0.0008843740409012116,
+        "ci_high": 0.0011344648681542082,
+        "n_treated": 3563992,
+        "n_control": 629886
+      },
+      "conformal": {
+        "q_treated": 0.007917948329532432,
+        "q_control": 0.003912741215470256,
+        "factual_coverage_treated": 0.9500057800354209,
+        "factual_coverage_control": 0.9500544542980793,
+        "target_per_arm": 0.95,
+        "target_ite": 0.9,
+        "share_empty": 0.06341243116752562,
+        "share_excludes_zero": 0.0,
+        "share_certified_benefit": 0.0,
+        "share_excludes_harm": 0.9365875688324744,
+        "share_only_zero": 0.9365875688324744,
+        "share_full_set": 0.0,
+        "set_shares": {
+          "{}": 0.06341243116752562,
+          "{0}": 0.9365875688324744,
+          "{-1,0}": 0.0,
+          "{0,1}": 0.0,
+          "{-1,0,1}": 0.0,
+          "{-1}": 0.0,
+          "{1}": 0.0,
+          "{-1,1}": 0.0
+        }
+      },
+      "exposure": {
+        "outcome": "conversion",
+        "itt": 0.0010094194545277099,
+        "itt_ci": [
+          0.0008843740409012116,
+          0.0011344648681542082
+        ],
+        "naive_exposed_vs_control": 0.05175570581306155,
+        "share_exposed_in_treated": 0.03588953061623034,
+        "complier_effect_wald": 0.028125735756243622,
+        "complier_effect_ci": [
+          0.02464156052520984,
+          0.031609910987277404
+        ]
+      },
+      "score_summary": {
+        "mean_predicted_uplift": 0.0009842740388540702,
+        "share_predicted_negative": 0.132603046631304
+      }
+    }
+  }
+}
